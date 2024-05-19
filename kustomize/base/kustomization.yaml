@@ -1,2 +1,2 @@
 resources:
-- helloworld.yaml
+- deployment.yaml
