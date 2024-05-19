@@ -2,7 +2,7 @@
 
 1. k8s overview
 ```
-kubectl port
+kubectl port-forward --namespace default svc/helloworld 8222:8222
 ```
 2. helm overview
 3. kustomize overview
