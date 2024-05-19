@@ -13,3 +13,6 @@ kustomize build helloworld | kubectl apply -f -
 ```
 ~/.dotnet/tools/aspirate generate --disable-secrets
 ```
+
+
+https://learn.microsoft.com/en-us/training/modules/dotnet-deploy-microservices-kubernetes/
