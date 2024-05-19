@@ -13,7 +13,7 @@ spec:
       containers:
       - name: productsbackend
         imagePullPolicy: IfNotPresent
-        image: productservice:latest
+        image: products:v1.0.1
         ports:
         - containerPort: 80
         env:
