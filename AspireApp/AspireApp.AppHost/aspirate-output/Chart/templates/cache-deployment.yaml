@@ -22,7 +22,7 @@ spec:
         - configMapRef:
             name: cache-env
         image: '{{ .Values.images.cache }}'
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: cache
         ports:
         - containerPort: 6379

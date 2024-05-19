@@ -22,7 +22,7 @@ spec:
         - configMapRef:
             name: webfrontend-env
         image: '{{ .Values.images.webfrontend }}'
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: webfrontend
         ports:
         - containerPort: 8080

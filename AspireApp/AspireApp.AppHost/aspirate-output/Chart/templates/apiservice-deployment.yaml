@@ -22,7 +22,7 @@ spec:
         - configMapRef:
             name: apiservice-env
         image: '{{ .Values.images.apiservice }}'
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: apiservice
         ports:
         - containerPort: 8080
