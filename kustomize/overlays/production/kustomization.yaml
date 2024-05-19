@@ -4,4 +4,10 @@ bases:
 namespace: production
 
 patches:
-- deployment.yaml
+  - target:
+      kind: Deployment
+      name: helloworld
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 8
