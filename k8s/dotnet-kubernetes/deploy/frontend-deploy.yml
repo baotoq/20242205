@@ -12,6 +12,7 @@ spec:
     spec:
       containers:
       - name: storefrontend
+        imagePullPolicy: IfNotPresent
         image: storeimage:latest
         ports:
         - containerPort: 80

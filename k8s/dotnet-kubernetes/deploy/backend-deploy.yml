@@ -12,6 +12,7 @@ spec:
     spec:
       containers:
       - name: productsbackend
+        imagePullPolicy: IfNotPresent
         image: productservice:latest
         ports:
         - containerPort: 80
