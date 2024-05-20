@@ -10,3 +10,7 @@ helm install -f values.yaml webapi
 ```
 helm upgrade my-release -f nats.yaml  oci://registry-1.docker.io/bitnamicharts/nats
 ```
+
+```
+helm install my-release oci://registry-1.docker.io/bitnamicharts/redis
+```
