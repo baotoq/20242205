@@ -23,11 +23,11 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
     {
-        var ran = new Random().Next(0, 5);
-        if (ran == 0)
-        {
-            throw new Exception("Error");
-        }
+        // var ran = new Random().Next(0, 5);
+        // if (ran == 0)
+        // {
+        //     throw new Exception("Error");
+        // }
         var forecast = Enumerable.Range(1, 5).Select(index =>
                 new WeatherForecast
                 (
