@@ -18,6 +18,7 @@ spec:
       containers:
       - name: helloworld
         image: crccheck/hello-world:latest
+        #image: crccheck/hello-world:v1.0.0
         imagePullPolicy: IfNotPresent
         resources:
           requests:
