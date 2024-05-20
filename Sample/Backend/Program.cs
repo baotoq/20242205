@@ -27,7 +27,7 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/weatherforecast", (IDistributedCache cache, ILogger<WeatherForecast> logger) =>
+app.MapGet("/weatherforecast", (ILogger<WeatherForecast> logger) =>
     {
         // var cacheData = cache.GetString("weatherforecast");
         // if (cacheData != null)
