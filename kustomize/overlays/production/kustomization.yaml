@@ -1,7 +1,7 @@
 bases:
 - ../../base
 
-namespace: production
+namePrefix: production-
 
 patches:
   - target:
