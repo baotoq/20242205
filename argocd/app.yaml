@@ -1,0 +1,35 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: staging
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/baotoq/20242205"
+    path: kustomize/overlays/staging
+    targetRevision: master
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: staging
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: production
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/baotoq/20242205"
+    path: kustomize/overlays/production
+    targetRevision: master
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: production
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
