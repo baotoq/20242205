@@ -1,9 +1,6 @@
 bases:
 - ../../base
 
-namePrefix: staging-
-namespace: default
-
 patches:
 - path: deployment.yaml
 

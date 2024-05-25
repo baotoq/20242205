@@ -1,8 +1,6 @@
 bases:
 - ../../base
 
-namePrefix: production-
-
 patches:
   - target:
       kind: Deployment
@@ -10,4 +8,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/replicas
-        value: 8
+        value: 4
